@@ -119,7 +119,7 @@ export const EmployeeList = (props) => {
             <Header />
             <div className='button__panel'>
                 <Link to="/employee/add">
-                    <InputButton variant="contained" buttonName='Add' />
+                    <InputButton variant="contained" buttonName='Adds' />
                 </Link>
             </div>
 

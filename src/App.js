@@ -19,10 +19,10 @@ function App() {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route index exact path="/emp_managment_test01_/employee/list" element={<EmployeeList />} />
-          <Route exact path="/emp_managment_test01_/employee/add" element={<AddNewEmployee />} />
-          <Route exact path="/emp_managment_test01_/employee/edit" element={<EditEmpDetails />} />
-          <Route path="*" element={<Navigate to="/emp_managment_test01_/employee/list" replace />} />
+          <Route index exact path="/" element={<EmployeeList />} />
+          <Route exact path="https://mithunsalinda.github.io/emp_managment_test01_/employee/add" element={<AddNewEmployee />} />
+          <Route exact path="https://mithunsalinda.github.io/emp_managment_test01_/employee/edit" element={<EditEmpDetails />} />
+          <Route path="*" element={<Navigate to="https://mithunsalinda.github.io/emp_managment_test01_/employee/list" replace />} />
         </Routes>
       </Router>
     </Provider>
