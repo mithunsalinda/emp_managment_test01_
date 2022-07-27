@@ -1,0 +1,7 @@
+export default {
+    ADD_NEW_EMP: "ADD_NEW_EMP",
+    EDIT_EMP: 'EDIT_EMP',
+    DELETE_EMP: 'DELETE_EMP',
+    LOADING_EMP_LIST: 'LOADING_EMP_LIST',
+    LOAD_LIST: 'LOAD_LIST'
+};

@@ -1,0 +1,57 @@
+
+
+$myFont: Helvetica, sans-serif;
+$white : '#FFF';
+$error: 'red';
+$myFontSize: 18px;
+
+.mrg-right {
+    margin-right: 10px !important
+}
+.MuiDataGrid-cell {
+    outline: none !important;
+}
+.custome__style{
+    flex-direction: row;
+    display: flex;
+    background-color: $white;
+    padding: 13px;
+   // margin: 20px;
+   .custome__style_col {
+    margin: 5px;
+    width: 220px;
+   }
+}
+
+//Error Messages
+.error__message {
+    color:$error;
+    font-size:12px
+}
+.wrapper{
+   // background-color: #FFF;
+    height: 50vh;
+    margin: 5rem;
+    padding: 2rem;
+    //display: inline-flex;
+}
+body{
+    background-color: #f2f2f2;
+}
+.MuiDataGrid-root {
+    background-color: #FFF;
+    float: right;
+    width: 100%;
+}
+.button__panel{
+    float: right;
+    margin-bottom: 10px;
+}
+.heading {background-color: #2a787a;
+    padding: 1rem 2rem;
+    margin: 10px 0;
+    h1 {
+        color: #FFF;
+        font-size: 1.5em;
+    }
+}
