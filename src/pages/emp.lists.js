@@ -117,9 +117,11 @@ export const EmployeeList = (props) => {
     return (
         <div className='wrapper'>
             <Header />
-            <div className='button__panel'><Link to="/employee/add">
-                <InputButton variant="contained" buttonName='Add' />
-            </Link></div>
+            <div className='button__panel'>
+                <Link to="/employee/add">
+                    <InputButton variant="contained" buttonName='Add' />
+                </Link>
+            </div>
 
             <div style={{ height: 400, width: '100%', float: 'left' }}>
                 <div style={{ display: 'flex', height: '100%' }}>

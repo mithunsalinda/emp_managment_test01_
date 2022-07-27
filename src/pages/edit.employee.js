@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import { TextInput, InputButton } from '../components/inputeFields/'
 import { Button } from '@mui/material'
 import RadioGroup from '@mui/material/RadioGroup';
@@ -24,6 +24,7 @@ export const EditEmpDetails = (props) => {
     const location = useLocation();
     const dispatch = useDispatch();
     const [editedData, setEditedData] = useState({})
+    const navigate = useNavigate();
     useEffect(() => {
         empDetailsLoad()
     }, [editedData])
@@ -185,9 +186,9 @@ export const EditEmpDetails = (props) => {
             </div>
             <div className="custome__style">
                 <div className="custome__style_col">
-                    <Link to="/employee/list">
-                        <InputButton variant="contained" buttonName='Back' />
-                    </Link>
+
+                    <InputButton variant="contained" buttonName='Back' onPress={() => navigate(-1)} />
+
                 </div>
                 <div className="custome__style_col">
 
